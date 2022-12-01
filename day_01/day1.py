@@ -23,8 +23,6 @@ def most_carried(calories_dict):
     return max(sum(e) for e in calories_dict.values())
 
 # part 2
-
-
 def most_three_carried(calories_dict):
     return sum(sorted([sum(e) for e in calories_dict.values()], reverse=True)[:3])
 
